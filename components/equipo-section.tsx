@@ -7,7 +7,6 @@ import { SectionHeading } from "./section-heading"
 const members = [
   { name: "Richard Medina", role: "Integrante" },
   { name: "Yefereson Andrada", role: "Integrante" },
-  { name: "Ruson", role: "Integrante" },
   { name: "Agustin Benegas", role: "Integrante" },
   { name: "Josefina Carabajal", role: "Integrante" },
 ]
@@ -45,9 +44,8 @@ function MemberCard({
   return (
     <div
       ref={ref}
-      className={`glass-card rounded-xl p-6 text-center transition-all duration-700 hover:border-[hsl(170,100%,50%,0.4)] group ${
-        isInView ? "opacity-100 scale-100" : "opacity-0 scale-95"
-      }`}
+      className={`glass-card rounded-xl p-6 text-center transition-all duration-700 hover:border-[hsl(170,100%,50%,0.4)] group ${isInView ? "opacity-100 scale-100" : "opacity-0 scale-95"
+        }`}
       style={{ transitionDelay: `${delay}ms` }}
     >
       {/* Avatar */}
