@@ -20,7 +20,7 @@ export function EquipoSection() {
           title="Equipo de Trabajo"
           description="Los integrantes que colaboraron en el desarrollo de este proyecto."
         />
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {members.map((member, i) => (
             <MemberCard key={member.name} {...member} delay={i * 100} />
           ))}
