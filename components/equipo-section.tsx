@@ -8,7 +8,7 @@ const members = [
   { name: "Josefina Carabajal", role: "Integrante" },
   { name: "Richard Medina", role: "Integrante" },
   { name: "Agustin Benegas", role: "Integrante" },
-  { name: "Yefereson Andrada", role: "Integrante" },
+  { name: "Yeferson Andara", role: "Integrante" },
 ]
 
 export function EquipoSection() {
