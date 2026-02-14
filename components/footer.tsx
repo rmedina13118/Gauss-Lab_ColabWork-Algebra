@@ -10,8 +10,7 @@ const quickLinks = [
 
 const members = [
   "Richard Medina",
-  "Yefereson Andrada",
-  "Ruson",
+  "Yefereson Andara Ruzon",
   "Agustin Benegas",
   "Josefina Carabajal",
 ]
