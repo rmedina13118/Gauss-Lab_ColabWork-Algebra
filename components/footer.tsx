@@ -37,7 +37,7 @@ export function Footer() {
               Informacion Academica
             </h4>
             <ul className="space-y-2 text-sm text-[hsl(200,30%,60%)]">
-              <li>Materia: Álgebra Lineal MATH-124.GB.T1.26.M1</li>
+              <li>Álgebra Lineal <br /> 2° Semestre - Módulo 1</li>
               <li>Profesor: Rafael Martinez</li>
               <li>
                 <img src={'public/logo-jala.webp'} width={100} height={100} alt="logo-jala" />
