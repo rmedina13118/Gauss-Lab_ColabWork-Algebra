@@ -3,7 +3,7 @@
 const quickLinks = [
   { label: "Inicio", href: "#inicio" },
   { label: "Demo Interactiva", href: "#demo" },
-  { label: "Tipos de Solucion", href: "#soluciones" },
+  { label: "Tipos de Solución", href: "#soluciones" },
   { label: "Ejemplos", href: "#ejemplos" },
   { label: "Equipo", href: "#equipo" },
 ]
