@@ -32,15 +32,14 @@ export function HeroSection() {
       />
 
       <div
-        className={`relative z-10 text-center px-4 max-w-4xl mx-auto transition-all duration-1000 ${
-          mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-        }`}
+        className={`relative z-10 text-center px-4 max-w-4xl mx-auto transition-all duration-1000 ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+          }`}
       >
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-6 rounded-full border border-[hsl(170,100%,50%,0.3)] bg-[hsl(170,100%,50%,0.08)]">
           <span className="w-2 h-2 rounded-full bg-[hsl(170,100%,50%)] animate-pulse-neon" />
           <span className="font-mono text-xs text-[hsl(170,100%,50%)] tracking-widest uppercase">
-            Algebra Lineal FMA-121
+            Álgebra Lineal
           </span>
         </div>
 
