@@ -26,7 +26,7 @@ const examples = [
     ],
   },
   {
-    title: "Problema #2 - soluciónUnica",
+    title: "Problema #2 - solución Unica",
     equations: ["x + y = 3", "2x - y = 3"],
     matrix: [
       [1, 1, 3],
@@ -37,7 +37,7 @@ const examples = [
       [0, 1, 1],
     ],
     color: "150, 100%, 50%",
-    result: "soluciónUnica: X = 2, Y = 1",
+    result: "solución Unica: X = 2, Y = 1",
     analysis: [
       "Sistema independiente",
       "Filas no proporcionales",

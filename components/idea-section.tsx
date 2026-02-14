@@ -21,7 +21,7 @@ const cards = [
     icon: Monitor,
     title: "Laboratorio Virtual",
     description:
-      "GaussLab es un ambiente amigable donde el estudiante puede llegar a entender el sistema antes de resolverlo, entendiendo los procesos necesarios para la soluciónde diferentes problemas.",
+      "GaussLab es un ambiente amigable donde el estudiante puede llegar a entender el sistema antes de resolverlo, entendiendo los procesos necesarios para la solución de diferentes problemas.",
   },
 ]
 

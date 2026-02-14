@@ -15,7 +15,7 @@ const concepts = [
     icon: ArrowDownUp,
     label: "Eliminacion Gaussiana",
     description:
-      "Aplicacion de operaciones elementales por filas para reducir la matriz a forma escalonada, simplificando la resolucióndel sistema.",
+      "Aplicacion de operaciones elementales por filas para reducir la matriz a forma escalonada, simplificando la resolución del sistema.",
   },
   {
     icon: Rows3,

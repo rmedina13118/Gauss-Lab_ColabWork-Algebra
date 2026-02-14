@@ -578,8 +578,8 @@ export function DemoSection() {
               <div className="ml-auto flex items-center gap-2">
                 <span
                   className={`w-2 h-2 rounded-full ${isProcessing
-                      ? "bg-[hsl(50,100%,55%)] animate-pulse-neon"
-                      : "bg-[hsl(150,100%,50%)]"
+                    ? "bg-[hsl(50,100%,55%)] animate-pulse-neon"
+                    : "bg-[hsl(150,100%,50%)]"
                     }`}
                 />
                 <span className="font-mono text-[10px] text-[hsl(200,30%,45%)]">
@@ -641,7 +641,7 @@ export function DemoSection() {
               </h3>
             </div>
             <p className="text-[hsl(180,100%,95%)] mb-6 text-center text-lg">
-              <TypewriterText text="Que tipo de solucióncrees que tiene este sistema?" speed={30} />
+              <TypewriterText text="Que tipo de solución crees que tiene este sistema?" speed={30} />
             </p>
             <div className="flex flex-wrap justify-center gap-3 mb-6">
               {(["unica", "infinitas", "ninguna"] as SolutionType[]).map((opt) => (
@@ -649,11 +649,11 @@ export function DemoSection() {
                   key={opt}
                   onClick={() => setQuizAnswer(opt)}
                   className={`px-5 py-3 rounded-lg font-mono text-sm border transition-all duration-300 hover:scale-105 ${quizAnswer === opt
-                      ? "border-[hsl(170,100%,50%)] bg-[hsl(170,100%,50%,0.15)] text-[hsl(170,100%,50%)] neon-border"
-                      : "border-[hsl(200,40%,20%)] text-[hsl(200,30%,60%)] hover:border-[hsl(200,40%,35%)]"
+                    ? "border-[hsl(170,100%,50%)] bg-[hsl(170,100%,50%,0.15)] text-[hsl(170,100%,50%)] neon-border"
+                    : "border-[hsl(200,40%,20%)] text-[hsl(200,30%,60%)] hover:border-[hsl(200,40%,35%)]"
                     }`}
                 >
-                  {opt === "unica" ? "soluciónUnica" : opt === "infinitas" ? "Infinitas Soluciones" : "Ninguna Solucion"}
+                  {opt === "unica" ? "solución Unica" : opt === "infinitas" ? "Infinitas Soluciones" : "Ninguna Solucion"}
                 </button>
               ))}
             </div>
@@ -693,7 +693,7 @@ export function DemoSection() {
                 El sistema tiene:{" "}
                 <span className="text-[hsl(170,100%,50%)] font-bold">
                   {result.type === "unica"
-                    ? "soluciónUnica"
+                    ? "solución Unica"
                     : result.type === "infinitas"
                       ? "Infinitas Soluciones"
                       : "Ninguna Solucion"}
@@ -728,17 +728,17 @@ export function DemoSection() {
             <div className="flex justify-center mb-6">
               <span
                 className={`px-5 py-2 rounded-full font-mono text-sm font-bold border transition-all duration-500 ${result.type === "unica"
-                    ? "border-[hsl(150,100%,50%,0.4)] bg-[hsl(150,100%,50%,0.1)] text-[hsl(150,100%,50%)]"
-                    : result.type === "infinitas"
-                      ? "border-[hsl(50,100%,55%,0.4)] bg-[hsl(50,100%,55%,0.1)] text-[hsl(50,100%,55%)]"
-                      : "border-[hsl(0,80%,55%,0.4)] bg-[hsl(0,80%,55%,0.1)] text-[hsl(0,80%,55%)]"
+                  ? "border-[hsl(150,100%,50%,0.4)] bg-[hsl(150,100%,50%,0.1)] text-[hsl(150,100%,50%)]"
+                  : result.type === "infinitas"
+                    ? "border-[hsl(50,100%,55%,0.4)] bg-[hsl(50,100%,55%,0.1)] text-[hsl(50,100%,55%)]"
+                    : "border-[hsl(0,80%,55%,0.4)] bg-[hsl(0,80%,55%,0.1)] text-[hsl(0,80%,55%)]"
                   }`}
               >
                 {result.type === "unica"
-                  ? `soluciónUnica: x = ${formatNum(result.x!)}, y = ${formatNum(result.y!)}`
+                  ? `solución Unica: x = ${formatNum(result.x!)}, y = ${formatNum(result.y!)}`
                   : result.type === "infinitas"
                     ? "Infinitas Soluciones"
-                    : "Ninguna solución(Sistema Inconsistente)"}
+                    : "Ninguna solución (Sistema Inconsistente)"}
               </span>
             </div>
 
@@ -840,10 +840,10 @@ export function DemoSection() {
                       key={i}
                       onClick={() => goToStep(i)}
                       className={`w-8 h-8 rounded-md font-mono text-[10px] font-bold border transition-all duration-300 ${i === currentStep
-                          ? "bg-[hsl(170,100%,50%,0.2)] border-[hsl(170,100%,50%)] text-[hsl(170,100%,50%)] scale-110 neon-border"
-                          : i < currentStep
-                            ? "bg-[hsl(170,100%,50%,0.05)] border-[hsl(170,100%,50%,0.2)] text-[hsl(170,100%,50%,0.6)]"
-                            : "bg-[hsl(220,25%,8%)] border-[hsl(200,40%,15%)] text-[hsl(200,30%,40%)]"
+                        ? "bg-[hsl(170,100%,50%,0.2)] border-[hsl(170,100%,50%)] text-[hsl(170,100%,50%)] scale-110 neon-border"
+                        : i < currentStep
+                          ? "bg-[hsl(170,100%,50%,0.05)] border-[hsl(170,100%,50%,0.2)] text-[hsl(170,100%,50%,0.6)]"
+                          : "bg-[hsl(220,25%,8%)] border-[hsl(200,40%,15%)] text-[hsl(200,30%,40%)]"
                         }`}
                       aria-label={`Ir al paso ${i + 1}`}
                     >

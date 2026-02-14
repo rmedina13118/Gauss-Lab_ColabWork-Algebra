@@ -7,7 +7,7 @@ import { SectionHeading } from "./section-heading"
 const solutionTypes = [
   {
     icon: CheckCircle2,
-    label: "soluciónUnica",
+    label: "solución Unica",
     color: "150, 100%, 50%",
     description:
       "El sistema tiene exactamente un par (x, y) que satisface ambas ecuaciones. El rango de la matriz es igual al numero de variables.",

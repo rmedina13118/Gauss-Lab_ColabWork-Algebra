@@ -27,7 +27,7 @@ export function Footer() {
               {"<"}GaussLab{"/>"}
             </div>
             <p className="text-sm text-[hsl(200,30%,55%)] leading-relaxed">
-              Laboratorio interactivo para la resoluciónde sistemas de ecuaciones lineales 2x2.
+              Laboratorio interactivo para la resolución de sistemas de ecuaciones lineales 2x2.
             </p>
           </div>
 

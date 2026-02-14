@@ -190,7 +190,7 @@ function solveGaussJordan(aug: Matrix, nVars: number) {
     solLines.push("Nota: infinitas soluciones porque rank(A) = rank([A|b]) < 2")
   }
 
-  const typeEs = type === "UNIQUE" ? "soluciónunica" : type === "INFINITE" ? "Infinitas soluciones" : "Ninguna solucion"
+  const typeEs = type === "UNIQUE" ? "solución unica" : type === "INFINITE" ? "Infinitas soluciones" : "Ninguna solucion"
   return { steps, rref: m.toPretty(nVars), rankA, rankAug, type: typeEs, solLines }
 }
 
@@ -266,7 +266,7 @@ function solveGaussElim(aug: Matrix, nVars: number) {
     solLines.push("Nota: infinitas soluciones porque rank(A) = rank([A|b]) < 2")
   }
 
-  const typeEs = type === "UNIQUE" ? "soluciónunica" : type === "INFINITE" ? "Infinitas soluciones" : "Ninguna solucion"
+  const typeEs = type === "UNIQUE" ? "solución unica" : type === "INFINITE" ? "Infinitas soluciones" : "Ninguna solucion"
   return { steps, ref: m.toPretty(nVars), rankA, rankAug, type: typeEs, solLines }
 }
 
@@ -400,7 +400,7 @@ const LEVELS_DATA = [
   },
   {
     title: "Puerta 03: Sistema independiente",
-    story: "El reactor solo se estabiliza si encontras una soluciónexacta para x e y.",
+    story: "El reactor solo se estabiliza si encontras una solución exacta para x e y.",
     coefs: [2, 1, 5, 1, -1, 1] as const,
     varNames: ["x", "y"],
   },
@@ -503,8 +503,8 @@ export function JavaPrototypeSection() {
       ["Matriz aumentada [A|b]:", "output"],
       ...pretty.map((l): [string, LineType] => [l, "output"]),
       ["", "output"],
-      ["Antes de resolver, que tipo de solucióncrees que tiene?", "output"],
-      ["1) soluciónunica", "output"],
+      ["Antes de resolver, que tipo de solución crees que tiene?", "output"],
+      ["1) solución unica", "output"],
       ["2) Infinitas soluciones", "output"],
       ["3) Ninguna solucion", "output"],
     ]
@@ -523,7 +523,7 @@ export function JavaPrototypeSection() {
       [Fraction.of(a21), Fraction.of(a22), Fraction.of(b2)],
     ])
 
-    const guessMap: Record<string, string> = { "1": "soluciónunica", "2": "Infinitas soluciones", "3": "Ninguna solucion" }
+    const guessMap: Record<string, string> = { "1": "solución unica", "2": "Infinitas soluciones", "3": "Ninguna solucion" }
 
     setTimeout(() => {
       if (method === 2) {
@@ -546,7 +546,7 @@ export function JavaPrototypeSection() {
         const typeColor: LineType = res.type.includes("unica") ? "success" : res.type.includes("Infinitas") ? "system" : "error"
         outLines.push([`Tipo de solucion: ${res.type}`, typeColor])
         outLines.push(["", "output"])
-        outLines.push(["=== solución===", "header"])
+        outLines.push(["=== solución ===", "header"])
         res.solLines.forEach((l) => outLines.push([l, res.type.includes("Ninguna") ? "error" : "success"]))
 
         // Verification
@@ -578,7 +578,7 @@ export function JavaPrototypeSection() {
         const typeColor: LineType = res.type.includes("unica") ? "success" : res.type.includes("Infinitas") ? "system" : "error"
         outLines.push([`Tipo de solucion: ${res.type}`, typeColor])
         outLines.push(["", "output"])
-        outLines.push(["=== solución===", "header"])
+        outLines.push(["=== solución ===", "header"])
         res.solLines.forEach((l) => outLines.push([l, res.type.includes("Ninguna") ? "error" : "success"]))
 
         outLines.push(["", "output"])
@@ -649,7 +649,7 @@ export function JavaPrototypeSection() {
           const typeColor: LineType = res.type.includes("unica") ? "success" : res.type.includes("Infinitas") ? "system" : "error"
           addLine(`Tipo de solucion: ${res.type}`, typeColor)
           addLine("", "output")
-          addLine("=== solución===", "header")
+          addLine("=== solución ===", "header")
           res.solLines.forEach((l) => addLine(l, res.type.includes("Ninguna") ? "error" : "success"))
         } else {
           const res = solveGaussElim(aug, 2)
@@ -669,7 +669,7 @@ export function JavaPrototypeSection() {
           const typeColor: LineType = res.type.includes("unica") ? "success" : res.type.includes("Infinitas") ? "system" : "error"
           addLine(`Tipo de solucion: ${res.type}`, typeColor)
           addLine("", "output")
-          addLine("=== solución===", "header")
+          addLine("=== solución ===", "header")
           res.solLines.forEach((l) => addLine(l, res.type.includes("Ninguna") ? "error" : "success"))
         }
       } catch {
@@ -874,8 +874,8 @@ export function JavaPrototypeSection() {
           <button
             onClick={() => setActiveTab("code")}
             className={`flex items-center gap-2 px-5 py-3 rounded-t-lg font-mono text-xs transition-all ${activeTab === "code"
-                ? "bg-[hsl(220,25%,8%)] text-[hsl(40,100%,55%)] border border-b-0 border-[hsl(40,100%,55%,0.25)]"
-                : "bg-transparent text-[hsl(200,30%,45%)] hover:text-[hsl(200,30%,60%)]"
+              ? "bg-[hsl(220,25%,8%)] text-[hsl(40,100%,55%)] border border-b-0 border-[hsl(40,100%,55%,0.25)]"
+              : "bg-transparent text-[hsl(200,30%,45%)] hover:text-[hsl(200,30%,60%)]"
               }`}
           >
             <Code2 size={14} />
@@ -884,8 +884,8 @@ export function JavaPrototypeSection() {
           <button
             onClick={() => setActiveTab("run")}
             className={`flex items-center gap-2 px-5 py-3 rounded-t-lg font-mono text-xs transition-all ${activeTab === "run"
-                ? "bg-[hsl(220,25%,8%)] text-[hsl(40,100%,55%)] border border-b-0 border-[hsl(40,100%,55%,0.25)]"
-                : "bg-transparent text-[hsl(200,30%,45%)] hover:text-[hsl(200,30%,60%)]"
+              ? "bg-[hsl(220,25%,8%)] text-[hsl(40,100%,55%)] border border-b-0 border-[hsl(40,100%,55%,0.25)]"
+              : "bg-transparent text-[hsl(200,30%,45%)] hover:text-[hsl(200,30%,60%)]"
               }`}
           >
             <Terminal size={14} />
@@ -1082,8 +1082,8 @@ export function JavaPrototypeSection() {
                         <div
                           key={i}
                           className={`w-6 h-1.5 rounded-full transition-all duration-500 ${i < currentLevel ? "bg-[hsl(150,100%,50%)]"
-                              : i === currentLevel && !["menu", "done"].includes(phase) ? "bg-[hsl(50,100%,55%)] animate-pulse-neon"
-                                : "bg-[hsl(220,25%,15%)]"
+                            : i === currentLevel && !["menu", "done"].includes(phase) ? "bg-[hsl(50,100%,55%)] animate-pulse-neon"
+                              : "bg-[hsl(220,25%,15%)]"
                             }`}
                         />
                       ))}
@@ -1095,8 +1095,8 @@ export function JavaPrototypeSection() {
                         <div
                           key={label}
                           className={`px-1.5 py-0.5 rounded text-[8px] font-mono transition-all ${i < customCoefs.length ? "bg-[hsl(150,100%,50%,0.15)] text-[hsl(150,100%,50%)] border border-[hsl(150,100%,50%,0.3)]"
-                              : i === customCoefs.length && phase.startsWith("custom-") ? "bg-[hsl(40,100%,55%,0.15)] text-[hsl(40,100%,55%)] border border-[hsl(40,100%,55%,0.3)] animate-pulse-neon"
-                                : "bg-[hsl(220,25%,12%)] text-[hsl(200,30%,35%)] border border-[hsl(200,40%,15%)]"
+                            : i === customCoefs.length && phase.startsWith("custom-") ? "bg-[hsl(40,100%,55%,0.15)] text-[hsl(40,100%,55%)] border border-[hsl(40,100%,55%,0.3)] animate-pulse-neon"
+                              : "bg-[hsl(220,25%,12%)] text-[hsl(200,30%,35%)] border border-[hsl(200,40%,15%)]"
                             }`}
                         >
                           {i < customCoefs.length ? customCoefs[i] : label}

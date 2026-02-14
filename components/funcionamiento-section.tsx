@@ -12,7 +12,7 @@ const systemSteps = [
   "Construye la matriz aumentada",
   "Aplica eliminacion de Gauss",
   "Muestra la matriz escalonada resultante",
-  "Determina el tipo de solucióndel sistema",
+  "Determina el tipo de solución del sistema",
 ]
 
 export function FuncionamientoSection() {
@@ -25,7 +25,7 @@ export function FuncionamientoSection() {
         <SectionHeading
           tag="Proceso"
           title="Como Funciona el Sistema"
-          description="Un flujo interactivo donde el usuario ingresa los datos y el sistema procesa automaticamente la soluciónpaso a paso."
+          description="Un flujo interactivo donde el usuario ingresa los datos y el sistema procesa automaticamente la solución paso a paso."
         />
 
         <div className="grid md:grid-cols-[1fr_auto_1fr] gap-8 items-start">
@@ -114,7 +114,7 @@ export function FuncionamientoSection() {
                 {"[ 0  1 | y ]"}
               </div>
               <div className="mt-2 text-[hsl(150,100%,50%)]">
-                {">> soluciónunica encontrada"}
+                {">> solución unica encontrada"}
               </div>
             </div>
           </div>

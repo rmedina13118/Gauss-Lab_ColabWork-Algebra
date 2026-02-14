@@ -27,7 +27,7 @@ const connections = [
     icon: Eye,
     title: "Interpretacion Geometrica",
     description:
-      "Cada tipo de solucióntiene una interpretacion visual: rectas que se cruzan, se superponen o son paralelas, conectando lo algebraico con lo geometrico.",
+      "Cada tipo de solución tiene una interpretacion visual: rectas que se cruzan, se superponen o son paralelas, conectando lo algebraico con lo geometrico.",
   },
 ]
 
