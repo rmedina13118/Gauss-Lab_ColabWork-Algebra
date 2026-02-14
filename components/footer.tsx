@@ -9,10 +9,10 @@ const quickLinks = [
 ]
 
 const members = [
-  "Richard Medina",
-  "Yefereson Andara Ruzon",
-  "Agustin Benegas",
   "Josefina Carabajal",
+  "Richard Medina",
+  "Yeferson Andara",
+  "Agustin Benegas",
 ]
 
 export function Footer() {
