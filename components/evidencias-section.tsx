@@ -57,15 +57,14 @@ function EvidenceCard({
   return (
     <div
       ref={ref}
-      className={`glass-card rounded-xl overflow-hidden transition-all duration-700 hover:border-[hsl(200,100%,55%,0.3)] ${
-        isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-      }`}
+      className={`glass-card rounded-xl overflow-hidden transition-all duration-700 hover:border-[hsl(200,100%,55%,0.3)] ${isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        }`}
       style={{ transitionDelay: `${delay}ms` }}
     >
       {/* Image placeholder */}
       <div className="aspect-video bg-[hsl(220,25%,10%)] flex items-center justify-center border-b border-[hsl(200,40%,15%)]">
         <div className="text-center">
-          <ImageIcon className="text-[hsl(200,30%,30%)] mx-auto mb-2" size={32} />
+          {/* <ImageIcon className="text-[hsl(200,30%,30%)] mx-auto mb-2" size={32} /> */}
           <span className="text-xs font-mono text-[hsl(200,30%,35%)]">Espacio para imagen</span>
         </div>
       </div>
