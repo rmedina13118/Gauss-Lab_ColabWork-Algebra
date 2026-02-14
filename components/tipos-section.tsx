@@ -52,7 +52,7 @@ export function TiposSection() {
       <div className="max-w-6xl mx-auto">
         <SectionHeading
           tag="Clasificacion"
-          title="Tipos de Solucion"
+          title="Tipos de Solución"
           description="Todo sistema de ecuaciones lineales 2x2 se clasifica en una de tres categorias segun la relacion entre sus filas y su rango."
         />
         <div className="grid md:grid-cols-3 gap-6">
