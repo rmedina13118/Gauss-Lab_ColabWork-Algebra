@@ -85,7 +85,7 @@ export function Footer() {
           </p>
           <p className="text-xs text-[hsl(200,30%,35%)] font-mono">Desarrollado con ❤️ por <a className="text-[hsl(170,100%,50%)]" href="https://github.com/rmedina13118" target="_blank">Richard M.</a></p>
           <p className="text-xs text-[hsl(200,30%,35%)] font-mono">
-            tecnologías usadas: Next.js + React + TailwindCSS
+            Tecnologías usadas: Next.js + React + TailwindCSS
           </p>
         </div>
       </div>
