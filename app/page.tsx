@@ -6,6 +6,7 @@ import { IdeaSection } from "@/components/idea-section"
 import { ObjetivoSection } from "@/components/objetivo-section"
 import { FuncionamientoSection } from "@/components/funcionamiento-section"
 import { DemoSection } from "@/components/demo-section"
+import { JavaPrototypeSection } from "@/components/java-prototype-section"
 import { TiposSection } from "@/components/tipos-section"
 import { EjemplosSection } from "@/components/ejemplos-section"
 import { RelacionSection } from "@/components/relacion-section"
@@ -35,6 +36,10 @@ export default function Page() {
       <div className="h-px bg-gradient-to-r from-transparent via-[hsl(200,100%,55%,0.2)] to-transparent" />
 
       <DemoSection />
+
+      <div className="h-px bg-gradient-to-r from-transparent via-[hsl(40,100%,55%,0.2)] to-transparent" />
+
+      <JavaPrototypeSection />
 
       <div className="h-px bg-gradient-to-r from-transparent via-[hsl(170,100%,50%,0.3)] to-transparent" />
 
