@@ -83,6 +83,7 @@ export function Footer() {
           <p className="text-xs text-[hsl(200,30%,40%)] font-mono">
             GaussLab &mdash; Proyecto Final de Algebra Lineal &copy; 2025
           </p>
+          <p>Desarollado con ❤️ <a href="https://github.com/rmedina13118" target="_blank">por Richard M.</a></p>
           <p className="text-xs text-[hsl(200,30%,35%)] font-mono">
             Desarrollado con Next.js + React + TailwindCSS
           </p>
