@@ -36,8 +36,8 @@ export function Footer() {
             <h4 className="font-mono text-xs uppercase tracking-wider text-[hsl(170,100%,50%)] mb-3">
               Informacion Academica
             </h4>
-            <ul className="space-y-2 text-sm text-[hsl(200,30%,60%)] text-center">
-              <li>Álgebra Lineal <br /> 2° Semestre - Módulo 1</li>
+            <ul className="space-y-2 text-sm text-[hsl(200,30%,60%)]">
+              <li className="text-center">Álgebra Lineal <br /> 2° Semestre - Módulo 1</li>
               <li>Profesor: Rafael Martinez</li>
               <li>
                 <img src={'/logo-jala.webp'} width={100} height={100} alt="logo-jala" />
