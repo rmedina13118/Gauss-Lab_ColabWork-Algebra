@@ -58,7 +58,6 @@ function MemberCard({
       {/* Placeholder links */}
       <div className="flex justify-center gap-3">
         <div className="w-8 h-8 rounded-md bg-[hsl(220,25%,12%)] border border-[hsl(200,40%,20%)] flex items-center justify-center text-[hsl(200,30%,50%)] hover:text-[hsl(170,100%,50%)] hover:border-[hsl(170,100%,50%,0.3)] transition-all cursor-default">
-          <Mail size={14} />
         </div>
       </div>
     </div>
