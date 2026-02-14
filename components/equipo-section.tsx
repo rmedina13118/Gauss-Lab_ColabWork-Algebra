@@ -1,6 +1,6 @@
 "use client"
 
-import { User, Mail } from "lucide-react"
+import { User } from "lucide-react"
 import { useInView } from "@/hooks/use-in-view"
 import { SectionHeading } from "./section-heading"
 
