@@ -37,8 +37,8 @@ export function Footer() {
               Informacion Academica
             </h4>
             <ul className="space-y-2 text-sm text-[hsl(200,30%,60%)]">
-              <li>Materia: Algebra Lineal FMA-121</li>
-              <li>Profesor: Roberto Carlos Rodriguez</li>
+              <li>Materia: Álgebra Lineal MATH-124.GB.T1.26.M1</li>
+              <li>Profesor: Rafael Martinez</li>
               <li>2025</li>
             </ul>
           </div>
