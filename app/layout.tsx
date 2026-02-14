@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: 'GaussLab - Desafio de Gauss',
   description:
-    'Laboratorio interactivo para resolver sistemas de ecuaciones lineales 2x2 mediante eliminacion gaussiana y Gauss-Jordan. Proyecto de Algebra Lineal FMA-121.',
+    'Laboratorio interactivo para resolver sistemas de ecuaciones lineales 2x2 mediante eliminacion gaussiana y Gauss-Jordan. Proyecto de Algebra Lineal.',
 }
 
 export const viewport: Viewport = {
