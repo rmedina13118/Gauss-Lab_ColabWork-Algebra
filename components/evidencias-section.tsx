@@ -9,16 +9,19 @@ const evidences = [
     title: "Reunion de planificacion",
     date: "Semana 1",
     description: "Definicion de objetivos, roles y estructura del proyecto GaussLab.",
+    image: "/sem1.jpeg",
   },
   {
     title: "Desarrollo del algoritmo",
     date: "Semana 2",
     description: "Implementacion del metodo de Gauss-Jordan y pruebas con distintos tipos de sistemas.",
+    image: "/sem2.jpeg",
   },
   {
     title: "Integracion y presentacion",
     date: "Semana 3",
     description: "Integracion de la interfaz interactiva, redaccion del informe y preparacion de la presentacion final.",
+    image: "/sem3.jpeg",
   },
 ]
 
@@ -44,11 +47,13 @@ export function EvidenciasSection() {
 function EvidenceCard({
   title,
   date,
+  image,
   description,
   delay,
 }: {
   title: string
   date: string
+  image: string
   description: string
   delay: number
 }) {
@@ -64,8 +69,7 @@ function EvidenceCard({
       {/* Image placeholder */}
       <div className="aspect-video bg-[hsl(220,25%,10%)] flex items-center justify-center border-b border-[hsl(200,40%,15%)]">
         <div className="text-center">
-          {/* <ImageIcon className="text-[hsl(200,30%,30%)] mx-auto mb-2" size={32} /> */}
-          <span className="text-xs font-mono text-[hsl(200,30%,35%)]">Espacio para imagen</span>
+          <img src={image} width={100} height={100} alt={`evidence-${title}`} />
         </div>
       </div>
       <div className="p-4">
