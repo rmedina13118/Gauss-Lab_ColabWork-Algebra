@@ -15,7 +15,7 @@ const concepts = [
     icon: ArrowDownUp,
     label: "Eliminacion Gaussiana",
     description:
-      "Aplicacion de operaciones elementales por filas para reducir la matriz a forma escalonada, simplificando la resolucion del sistema.",
+      "Aplicacion de operaciones elementales por filas para reducir la matriz a forma escalonada, simplificando la resolucióndel sistema.",
   },
   {
     icon: Rows3,
@@ -66,9 +66,8 @@ function ConceptCard({
   return (
     <div
       ref={ref}
-      className={`glass-card rounded-xl p-6 text-center transition-all duration-700 hover:border-[hsl(200,100%,55%,0.4)] group ${
-        isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-      }`}
+      className={`glass-card rounded-xl p-6 text-center transition-all duration-700 hover:border-[hsl(200,100%,55%,0.4)] group ${isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        }`}
       style={{ transitionDelay: `${delay}ms` }}
     >
       <div className="w-14 h-14 rounded-full bg-[hsl(200,100%,55%,0.1)] border border-[hsl(200,100%,55%,0.25)] flex items-center justify-center mx-auto mb-4 group-hover:neon-border-blue transition-all">

@@ -12,7 +12,7 @@ const systemSteps = [
   "Construye la matriz aumentada",
   "Aplica eliminacion de Gauss",
   "Muestra la matriz escalonada resultante",
-  "Determina el tipo de solucion del sistema",
+  "Determina el tipo de solucióndel sistema",
 ]
 
 export function FuncionamientoSection() {
@@ -25,16 +25,15 @@ export function FuncionamientoSection() {
         <SectionHeading
           tag="Proceso"
           title="Como Funciona el Sistema"
-          description="Un flujo interactivo donde el usuario ingresa los datos y el sistema procesa automaticamente la solucion paso a paso."
+          description="Un flujo interactivo donde el usuario ingresa los datos y el sistema procesa automaticamente la soluciónpaso a paso."
         />
 
         <div className="grid md:grid-cols-[1fr_auto_1fr] gap-8 items-start">
           {/* User column */}
           <div
             ref={leftRef}
-            className={`glass-card rounded-xl p-6 transition-all duration-700 ${
-              leftVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"
-            }`}
+            className={`glass-card rounded-xl p-6 transition-all duration-700 ${leftVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"
+              }`}
           >
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 rounded-lg bg-[hsl(170,100%,50%,0.12)] border border-[hsl(170,100%,50%,0.3)] flex items-center justify-center">
@@ -80,9 +79,8 @@ export function FuncionamientoSection() {
           {/* System column */}
           <div
             ref={rightRef}
-            className={`glass-card rounded-xl p-6 transition-all duration-700 ${
-              rightVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"
-            }`}
+            className={`glass-card rounded-xl p-6 transition-all duration-700 ${rightVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"
+              }`}
           >
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 rounded-lg bg-[hsl(200,100%,55%,0.12)] border border-[hsl(200,100%,55%,0.3)] flex items-center justify-center">
@@ -116,7 +114,7 @@ export function FuncionamientoSection() {
                 {"[ 0  1 | y ]"}
               </div>
               <div className="mt-2 text-[hsl(150,100%,50%)]">
-                {">> Solucion unica encontrada"}
+                {">> soluciónunica encontrada"}
               </div>
             </div>
           </div>

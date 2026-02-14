@@ -7,7 +7,7 @@ import { SectionHeading } from "./section-heading"
 const solutionTypes = [
   {
     icon: CheckCircle2,
-    label: "Solucion Unica",
+    label: "soluciónUnica",
     color: "150, 100%, 50%",
     description:
       "El sistema tiene exactamente un par (x, y) que satisface ambas ecuaciones. El rango de la matriz es igual al numero de variables.",
@@ -85,9 +85,8 @@ function SolutionCard({
   return (
     <div
       ref={ref}
-      className={`glass-card rounded-xl p-6 transition-all duration-700 hover:scale-[1.02] ${
-        isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-      }`}
+      className={`glass-card rounded-xl p-6 transition-all duration-700 hover:scale-[1.02] ${isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        }`}
       style={{
         transitionDelay: `${delay}ms`,
         borderColor: `hsla(${color}, 0.2)`,

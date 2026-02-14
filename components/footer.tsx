@@ -27,7 +27,7 @@ export function Footer() {
               {"<"}GaussLab{"/>"}
             </div>
             <p className="text-sm text-[hsl(200,30%,55%)] leading-relaxed">
-              Laboratorio interactivo para la resolucion de sistemas de ecuaciones lineales 2x2.
+              Laboratorio interactivo para la resoluciónde sistemas de ecuaciones lineales 2x2.
             </p>
           </div>
 
@@ -37,7 +37,7 @@ export function Footer() {
               Informacion Academica
             </h4>
             <ul className="space-y-2 text-sm text-[hsl(200,30%,60%)]">
-              <li className="text-center">Álgebra Lineal <br /> 2° Semestre - Módulo 1</li>
+              <li>Álgebra Lineal <br /> 2° Semestre - Módulo 1</li>
               <li>Profesor: Rafael Martinez</li>
               <li>
                 <img src={'/logo-jala.webp'} width={100} height={100} alt="logo-jala" />

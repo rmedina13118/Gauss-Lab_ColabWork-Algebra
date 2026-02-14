@@ -21,7 +21,7 @@ const cards = [
     icon: Monitor,
     title: "Laboratorio Virtual",
     description:
-      "GaussLab es un ambiente amigable donde el estudiante puede llegar a entender el sistema antes de resolverlo, entendiendo los procesos necesarios para la solucion de diferentes problemas.",
+      "GaussLab es un ambiente amigable donde el estudiante puede llegar a entender el sistema antes de resolverlo, entendiendo los procesos necesarios para la soluciónde diferentes problemas.",
   },
 ]
 
@@ -60,9 +60,8 @@ function IdeaCard({
   return (
     <div
       ref={ref}
-      className={`glass-card rounded-xl p-6 transition-all duration-700 hover:border-[hsl(170,100%,50%,0.4)] group ${
-        isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-      }`}
+      className={`glass-card rounded-xl p-6 transition-all duration-700 hover:border-[hsl(170,100%,50%,0.4)] group ${isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        }`}
       style={{ transitionDelay: `${delay}ms` }}
     >
       <div className="w-12 h-12 rounded-lg bg-[hsl(170,100%,50%,0.1)] border border-[hsl(170,100%,50%,0.25)] flex items-center justify-center mb-4 group-hover:neon-border transition-all">

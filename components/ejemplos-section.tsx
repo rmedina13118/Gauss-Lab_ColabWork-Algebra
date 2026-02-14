@@ -26,7 +26,7 @@ const examples = [
     ],
   },
   {
-    title: "Problema #2 - Solucion Unica",
+    title: "Problema #2 - soluciónUnica",
     equations: ["x + y = 3", "2x - y = 3"],
     matrix: [
       [1, 1, 3],
@@ -37,7 +37,7 @@ const examples = [
       [0, 1, 1],
     ],
     color: "150, 100%, 50%",
-    result: "Solucion Unica: X = 2, Y = 1",
+    result: "soluciónUnica: X = 2, Y = 1",
     analysis: [
       "Sistema independiente",
       "Filas no proporcionales",
@@ -83,9 +83,8 @@ function ExampleCard({
   return (
     <div
       ref={ref}
-      className={`glass-card rounded-xl overflow-hidden transition-all duration-700 ${
-        isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-      }`}
+      className={`glass-card rounded-xl overflow-hidden transition-all duration-700 ${isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        }`}
       style={{ transitionDelay: `${delay}ms` }}
     >
       {/* Header */}

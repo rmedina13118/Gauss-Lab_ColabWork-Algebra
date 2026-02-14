@@ -36,7 +36,7 @@ function solveGaussJordan(
     label: "Matriz aumentada inicial",
     operation: "Construyendo la matriz aumentada [A|b] a partir del sistema de ecuaciones...",
     matrix: m.map((r) => [...r]),
-    changedCells: [[0,0],[0,1],[0,2],[1,0],[1,1],[1,2]],
+    changedCells: [[0, 0], [0, 1], [0, 2], [1, 0], [1, 1], [1, 2]],
   })
 
   if (m[0][0] === 0 && m[1][0] !== 0) {
@@ -45,7 +45,7 @@ function solveGaussJordan(
       label: "Intercambio F1 <-> F2",
       operation: "Detectado pivote nulo en posicion (1,1). Intercambiando filas para obtener pivote no nulo...",
       matrix: m.map((r) => [...r]),
-      changedCells: [[0,0],[0,1],[0,2],[1,0],[1,1],[1,2]],
+      changedCells: [[0, 0], [0, 1], [0, 2], [1, 0], [1, 1], [1, 2]],
     })
   }
 
@@ -63,7 +63,7 @@ function solveGaussJordan(
         label: `F1 = F1 * (1/${formatNum(1 / factor)})`,
         operation: `Normalizando fila 1: multiplicando por 1/${formatNum(1 / factor)} para obtener pivote = 1...`,
         matrix: m.map((r) => [...r]),
-        changedCells: [[0,0],[0,1],[0,2]],
+        changedCells: [[0, 0], [0, 1], [0, 2]],
       })
     }
   } else {
@@ -74,7 +74,7 @@ function solveGaussJordan(
         label: `F1 = F1 / ${formatNum(factor)}`,
         operation: `Normalizando fila 1: dividiendo por ${formatNum(factor)} para hacer el pivote igual a 1...`,
         matrix: m.map((r) => [...r]),
-        changedCells: [[0,0],[0,1],[0,2]],
+        changedCells: [[0, 0], [0, 1], [0, 2]],
       })
     }
   }
@@ -86,7 +86,7 @@ function solveGaussJordan(
       label: `F2 = F2 - (${formatNum(factor)}) * F1`,
       operation: `Eliminando coeficiente en posicion (2,1): restando ${formatNum(factor)} veces la fila 1...`,
       matrix: m.map((r) => [...r]),
-      changedCells: [[1,0],[1,1],[1,2]],
+      changedCells: [[1, 0], [1, 1], [1, 2]],
     })
   }
 
@@ -98,7 +98,7 @@ function solveGaussJordan(
         label: "Fila [0 0 | k] con k != 0 => Contradiccion",
         operation: "Analisis: La fila [0 0 | k] con k distinto de 0 representa una contradiccion. El sistema es inconsistente.",
         matrix: m.map((r) => [...r]),
-        changedCells: [[1,0],[1,1],[1,2]],
+        changedCells: [[1, 0], [1, 1], [1, 2]],
       })
       return { steps, type: "ninguna" }
     }
@@ -106,7 +106,7 @@ function solveGaussJordan(
       label: "Fila de ceros sin contradiccion => Infinitas soluciones",
       operation: "Analisis: Fila nula [0 0 | 0] detectada. No hay contradiccion, el sistema tiene infinitas soluciones (ecuaciones dependientes).",
       matrix: m.map((r) => [...r]),
-      changedCells: [[1,0],[1,1],[1,2]],
+      changedCells: [[1, 0], [1, 1], [1, 2]],
     })
     return { steps, type: "infinitas" }
   }
@@ -118,7 +118,7 @@ function solveGaussJordan(
       label: `F2 = F2 / ${formatNum(factor)}`,
       operation: `Normalizando fila 2: dividiendo por ${formatNum(factor)} para hacer el pivote igual a 1...`,
       matrix: m.map((r) => [...r]),
-      changedCells: [[1,0],[1,1],[1,2]],
+      changedCells: [[1, 0], [1, 1], [1, 2]],
     })
   }
 
@@ -129,7 +129,7 @@ function solveGaussJordan(
       label: `F1 = F1 - (${formatNum(factor)}) * F2`,
       operation: `Eliminacion hacia atras: limpiando coeficiente en posicion (1,2) restando ${formatNum(factor)} veces la fila 2...`,
       matrix: m.map((r) => [...r]),
-      changedCells: [[0,0],[0,1],[0,2]],
+      changedCells: [[0, 0], [0, 1], [0, 2]],
     })
   }
 
@@ -577,11 +577,10 @@ export function DemoSection() {
               </div>
               <div className="ml-auto flex items-center gap-2">
                 <span
-                  className={`w-2 h-2 rounded-full ${
-                    isProcessing
+                  className={`w-2 h-2 rounded-full ${isProcessing
                       ? "bg-[hsl(50,100%,55%)] animate-pulse-neon"
                       : "bg-[hsl(150,100%,50%)]"
-                  }`}
+                    }`}
                 />
                 <span className="font-mono text-[10px] text-[hsl(200,30%,45%)]">
                   {isProcessing ? "WORKING" : "READY"}
@@ -642,20 +641,19 @@ export function DemoSection() {
               </h3>
             </div>
             <p className="text-[hsl(180,100%,95%)] mb-6 text-center text-lg">
-              <TypewriterText text="Que tipo de solucion crees que tiene este sistema?" speed={30} />
+              <TypewriterText text="Que tipo de solucióncrees que tiene este sistema?" speed={30} />
             </p>
             <div className="flex flex-wrap justify-center gap-3 mb-6">
               {(["unica", "infinitas", "ninguna"] as SolutionType[]).map((opt) => (
                 <button
                   key={opt}
                   onClick={() => setQuizAnswer(opt)}
-                  className={`px-5 py-3 rounded-lg font-mono text-sm border transition-all duration-300 hover:scale-105 ${
-                    quizAnswer === opt
+                  className={`px-5 py-3 rounded-lg font-mono text-sm border transition-all duration-300 hover:scale-105 ${quizAnswer === opt
                       ? "border-[hsl(170,100%,50%)] bg-[hsl(170,100%,50%,0.15)] text-[hsl(170,100%,50%)] neon-border"
                       : "border-[hsl(200,40%,20%)] text-[hsl(200,30%,60%)] hover:border-[hsl(200,40%,35%)]"
-                  }`}
+                    }`}
                 >
-                  {opt === "unica" ? "Solucion Unica" : opt === "infinitas" ? "Infinitas Soluciones" : "Ninguna Solucion"}
+                  {opt === "unica" ? "soluciónUnica" : opt === "infinitas" ? "Infinitas Soluciones" : "Ninguna Solucion"}
                 </button>
               ))}
             </div>
@@ -695,10 +693,10 @@ export function DemoSection() {
                 El sistema tiene:{" "}
                 <span className="text-[hsl(170,100%,50%)] font-bold">
                   {result.type === "unica"
-                    ? "Solucion Unica"
+                    ? "soluciónUnica"
                     : result.type === "infinitas"
-                    ? "Infinitas Soluciones"
-                    : "Ninguna Solucion"}
+                      ? "Infinitas Soluciones"
+                      : "Ninguna Solucion"}
                 </span>
               </p>
             </div>
@@ -729,19 +727,18 @@ export function DemoSection() {
             {/* Solution type badge */}
             <div className="flex justify-center mb-6">
               <span
-                className={`px-5 py-2 rounded-full font-mono text-sm font-bold border transition-all duration-500 ${
-                  result.type === "unica"
+                className={`px-5 py-2 rounded-full font-mono text-sm font-bold border transition-all duration-500 ${result.type === "unica"
                     ? "border-[hsl(150,100%,50%,0.4)] bg-[hsl(150,100%,50%,0.1)] text-[hsl(150,100%,50%)]"
                     : result.type === "infinitas"
-                    ? "border-[hsl(50,100%,55%,0.4)] bg-[hsl(50,100%,55%,0.1)] text-[hsl(50,100%,55%)]"
-                    : "border-[hsl(0,80%,55%,0.4)] bg-[hsl(0,80%,55%,0.1)] text-[hsl(0,80%,55%)]"
-                }`}
+                      ? "border-[hsl(50,100%,55%,0.4)] bg-[hsl(50,100%,55%,0.1)] text-[hsl(50,100%,55%)]"
+                      : "border-[hsl(0,80%,55%,0.4)] bg-[hsl(0,80%,55%,0.1)] text-[hsl(0,80%,55%)]"
+                  }`}
               >
                 {result.type === "unica"
-                  ? `Solucion Unica: x = ${formatNum(result.x!)}, y = ${formatNum(result.y!)}`
+                  ? `soluciónUnica: x = ${formatNum(result.x!)}, y = ${formatNum(result.y!)}`
                   : result.type === "infinitas"
-                  ? "Infinitas Soluciones"
-                  : "Ninguna Solucion (Sistema Inconsistente)"}
+                    ? "Infinitas Soluciones"
+                    : "Ninguna solución(Sistema Inconsistente)"}
               </span>
             </div>
 
@@ -801,9 +798,8 @@ export function DemoSection() {
                         return (
                           <div
                             key={ri}
-                            className={`flex items-center gap-3 px-3 py-2 rounded-md transition-all duration-500 ${
-                              isRowChanged ? "animate-row-highlight" : ""
-                            }`}
+                            className={`flex items-center gap-3 px-3 py-2 rounded-md transition-all duration-500 ${isRowChanged ? "animate-row-highlight" : ""
+                              }`}
                           >
                             {row.map((val, ci) => {
                               const isCellChanged = result.steps[currentStep]?.changedCells?.some(
@@ -843,13 +839,12 @@ export function DemoSection() {
                     <button
                       key={i}
                       onClick={() => goToStep(i)}
-                      className={`w-8 h-8 rounded-md font-mono text-[10px] font-bold border transition-all duration-300 ${
-                        i === currentStep
+                      className={`w-8 h-8 rounded-md font-mono text-[10px] font-bold border transition-all duration-300 ${i === currentStep
                           ? "bg-[hsl(170,100%,50%,0.2)] border-[hsl(170,100%,50%)] text-[hsl(170,100%,50%)] scale-110 neon-border"
                           : i < currentStep
-                          ? "bg-[hsl(170,100%,50%,0.05)] border-[hsl(170,100%,50%,0.2)] text-[hsl(170,100%,50%,0.6)]"
-                          : "bg-[hsl(220,25%,8%)] border-[hsl(200,40%,15%)] text-[hsl(200,30%,40%)]"
-                      }`}
+                            ? "bg-[hsl(170,100%,50%,0.05)] border-[hsl(170,100%,50%,0.2)] text-[hsl(170,100%,50%,0.6)]"
+                            : "bg-[hsl(220,25%,8%)] border-[hsl(200,40%,15%)] text-[hsl(200,30%,40%)]"
+                        }`}
                       aria-label={`Ir al paso ${i + 1}`}
                     >
                       {i + 1}

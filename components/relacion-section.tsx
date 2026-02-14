@@ -27,7 +27,7 @@ const connections = [
     icon: Eye,
     title: "Interpretacion Geometrica",
     description:
-      "Cada tipo de solucion tiene una interpretacion visual: rectas que se cruzan, se superponen o son paralelas, conectando lo algebraico con lo geometrico.",
+      "Cada tipo de solucióntiene una interpretacion visual: rectas que se cruzan, se superponen o son paralelas, conectando lo algebraico con lo geometrico.",
   },
 ]
 
@@ -66,9 +66,8 @@ function ConnectionCard({
   return (
     <div
       ref={ref}
-      className={`glass-card rounded-xl p-6 flex gap-4 transition-all duration-700 hover:border-[hsl(170,100%,50%,0.3)] ${
-        isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-      }`}
+      className={`glass-card rounded-xl p-6 flex gap-4 transition-all duration-700 hover:border-[hsl(170,100%,50%,0.3)] ${isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        }`}
       style={{ transitionDelay: `${delay}ms` }}
     >
       <div className="w-10 h-10 rounded-lg bg-[hsl(170,100%,50%,0.1)] border border-[hsl(170,100%,50%,0.25)] flex items-center justify-center shrink-0">
