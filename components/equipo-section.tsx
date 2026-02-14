@@ -5,10 +5,10 @@ import { useInView } from "@/hooks/use-in-view"
 import { SectionHeading } from "./section-heading"
 
 const members = [
-  { name: "Richard Medina", role: "Integrante" },
-  { name: "Yefereson Andrada", role: "Integrante" },
-  { name: "Agustin Benegas", role: "Integrante" },
   { name: "Josefina Carabajal", role: "Integrante" },
+  { name: "Richard Medina", role: "Integrante" },
+  { name: "Agustin Benegas", role: "Integrante" },
+  { name: "Yefereson Andrada", role: "Integrante" },
 ]
 
 export function EquipoSection() {
