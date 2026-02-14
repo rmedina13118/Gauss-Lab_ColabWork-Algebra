@@ -39,7 +39,10 @@ export function Footer() {
             <ul className="space-y-2 text-sm text-[hsl(200,30%,60%)]">
               <li>Materia: Álgebra Lineal MATH-124.GB.T1.26.M1</li>
               <li>Profesor: Rafael Martinez</li>
-              <li>2025</li>
+              <li>
+                <img src={'public/logo-jala.webp'} width={100} height={100} alt="logo-jala" />
+                <p>Jala University 2025</p>
+              </li>
             </ul>
           </div>
 
