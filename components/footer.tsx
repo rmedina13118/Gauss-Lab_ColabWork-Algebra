@@ -40,7 +40,6 @@ export function Footer() {
               <li>Profesor: Rafael Martinez</li>
               <li className="pt-2">
                 <img src={'/logo-jala.webp'} width={100} height={100} alt="logo-jala" />
-                <p>Jala University 2025</p>
               </li>
             </ul>
           </div>
