@@ -69,7 +69,7 @@ function EvidenceCard({
       {/* Image placeholder */}
       <div className="aspect-video bg-[hsl(220,25%,10%)] flex items-center justify-center border-b border-[hsl(200,40%,15%)]">
         <div className="text-center">
-          <img src={image} width={150} height={150} alt={`evidence-${title}`} />
+          <img className="w-full" src={image} width={100} height={100} alt={`evidence-${title}`} />
         </div>
       </div>
       <div className="p-4">
