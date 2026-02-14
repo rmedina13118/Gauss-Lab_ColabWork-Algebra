@@ -40,7 +40,7 @@ export function Footer() {
               <li>Álgebra Lineal <br /> 2° Semestre - Módulo 1</li>
               <li>Profesor: Rafael Martinez</li>
               <li>
-                <img src={'public/logo-jala.webp'} width={100} height={100} alt="logo-jala" />
+                <img src={'/logo-jala.webp'} width={100} height={100} alt="logo-jala" />
                 <p>Jala University 2025</p>
               </li>
             </ul>
