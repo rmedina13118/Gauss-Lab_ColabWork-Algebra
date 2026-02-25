@@ -81,7 +81,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="pt-6 border-t border-[hsl(200,40%,12%)] flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-[hsl(200,30%,40%)] font-mono">
-            GaussLab &mdash; Proyecto Final de Algebra Lineal &copy; 2025
+            GaussLab &mdash; Proyecto Final de Algebra Lineal &copy; 2026
           </p>
           <p className="text-xs text-[hsl(200,30%,35%)] font-mono">Desarrollado con ❤️ por <a className="text-[hsl(170,100%,50%)]" href="https://github.com/rmedina13118" target="_blank">Richard M.</a></p>
           <p className="text-xs text-[hsl(200,30%,35%)] font-mono">
